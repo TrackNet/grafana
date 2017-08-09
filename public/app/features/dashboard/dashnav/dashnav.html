@@ -35,6 +35,7 @@
 					<i class="fa" ng-class="{'fa-star-o': !ctrl.dashboard.meta.isStarred, 'fa-star': ctrl.dashboard.meta.isStarred}" style="color: orange;"></i>
 				</a>
 			</li>
+                        <!--
 			<li ng-show="::ctrl.dashboard.meta.canShare" class="dropdown">
 				<a class="pointer" ng-click="ctrl.hideTooltip($event)" bs-tooltip="'Share dashboard'" data-placement="bottom" data-toggle="dropdown"><i class="fa fa-share-square-o"></i></a>
 				<ul class="dropdown-menu">
@@ -58,12 +59,15 @@
 					</li>
 				</ul>
 			</li>
+                        -->
 			<li ng-show="::ctrl.dashboard.meta.canSave">
 				<a ng-click="ctrl.saveDashboard()" bs-tooltip="'Save dashboard <br> CTRL+S'" data-placement="bottom"><i class="fa fa-save"></i></a>
 			</li>
+                        <!--
 			<li ng-if="::ctrl.dashboard.snapshot.originalUrl">
 				<a ng-href="{{ctrl.dashboard.snapshot.originalUrl}}" bs-tooltip="'Open original dashboard'" data-placement="bottom"><i class="fa fa-link"></i></a>
 			</li>
+                        -->
 			<li class="dropdown">
 				<a class="pointer" data-toggle="dropdown">
 					<i class="fa fa-cog"></i>
