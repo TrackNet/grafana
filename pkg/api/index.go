@@ -86,8 +86,8 @@ func setIndexViewData(c *middleware.Context) (*dtos.IndexViewData, error) {
 
 	dashboardChildNavs := []*dtos.NavLink{
 		{Text: "Home", Url: setting.AppSubUrl + "/"},
-		{Text: "Playlists", Url: setting.AppSubUrl + "/playlists"},
-		{Text: "Snapshots", Url: setting.AppSubUrl + "/dashboard/snapshots"},
+		//{Text: "Playlists", Url: setting.AppSubUrl + "/playlists"},
+		//{Text: "Snapshots", Url: setting.AppSubUrl + "/dashboard/snapshots"},
 	}
 
 	if c.OrgRole == m.ROLE_ADMIN || c.OrgRole == m.ROLE_EDITOR {
